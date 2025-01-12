@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    
+    <div class="main">
+        <label for="length" id="lengthText">Length of Password :</label>
+        <input type="text" id="length" placeholder="Enter number of characters">
+        
+        <div class="checkbox">
+            <input type="checkbox" id="lowerCase">
+            <label for="lowerCase"  id="lowerCase">Allow Lowercase</label>
+            <br>
+            <input type="checkbox" id="upperCase">
+            <label for="upperCase">Allow upperCase</label>
+            <br>
+            <input type="checkbox" id="Symbols">
+            <label for="Symbols">Allow Symbols</label>
+        </div>
+
+        <button onclick="generatePass()">Generate</button>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
